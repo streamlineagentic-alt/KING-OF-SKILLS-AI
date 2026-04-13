@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" fill="none">
+  <defs>
+    <linearGradient id="crownGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e2c97e"/>
+      <stop offset="50%" style="stop-color:#c9a84c"/>
+      <stop offset="100%" style="stop-color:#a88a2e"/>
+    </linearGradient>
+    <linearGradient id="crownShine" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e6b8"/>
+      <stop offset="100%" style="stop-color:#c9a84c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Crown base -->
+  <path d="M30 120 L50 50 L80 85 L100 30 L120 85 L150 50 L170 120 Z"
+        fill="url(#crownGold)" filter="url(#glow)"/>
+  <!-- Crown band -->
+  <rect x="30" y="115" width="140" height="18" rx="3" fill="url(#crownGold)"/>
+  <!-- Crown jewels -->
+  <circle cx="100" cy="42" r="6" fill="url(#crownShine)"/>
+  <circle cx="55" cy="65" r="4" fill="url(#crownShine)"/>
+  <circle cx="145" cy="65" r="4" fill="url(#crownShine)"/>
+  <!-- Crown details -->
+  <path d="M30 120 L50 50 L80 85 L100 30 L120 85 L150 50 L170 120"
+        stroke="#f5e6b8" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <!-- Band details -->
+  <line x1="60" y1="118" x2="60" y2="130" stroke="#a88a2e" stroke-width="1"/>
+  <line x1="80" y1="118" x2="80" y2="130" stroke="#a88a2e" stroke-width="1"/>
+  <line x1="100" y1="118" x2="100" y2="130" stroke="#a88a2e" stroke-width="1"/>
+  <line x1="120" y1="118" x2="120" y2="130" stroke="#a88a2e" stroke-width="1"/>
+  <line x1="140" y1="118" x2="140" y2="130" stroke="#a88a2e" stroke-width="1"/>
+</svg>
